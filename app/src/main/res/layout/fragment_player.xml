@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        tools:context="com.agarwal.vinod.govindkigali.MainActivity">
+
+        <LinearLayout
+            android:id="@+id/ll_head"
+            android:padding="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:paddingEnd="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_close_white_18dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="@android:color/white"
+                android:layout_gravity="center"
+                android:layout_width="1dp"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:text="SWAG se Swagat"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:lines="1"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_file_download_white_36dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_more_vert_white_36dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:background="@android:color/white"
+            android:layout_below="@id/ll_head"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <!--<it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow-->
+        <!--android:id="@+id/cf_list"-->
+        <!--android:layout_above="@id/ll_progress"-->
+        <!--android:layout_below="@id/divider"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:coverHeight="200dp"-->
+        <!--app:coverWidth="140dp"-->
+        <!--app:maxScaleFactor="1.5"-->
+        <!--app:reflectionGap="0px"-->
+        <!--app:adjustPositionMultiplier="0.5"-->
+        <!--app:rotationThreshold="0.5"-->
+        <!--app:scalingThreshold="0.5"-->
+        <!--app:spacing="0.6"/>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_song_image"
+            android:layout_above="@id/ll_progress"
+            android:layout_below="@id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_progress"
+            android:padding="10dp"
+            android:layout_above="@id/rl_player_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_start"
+                android:text="@string/timeline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <SeekBar
+                android:id="@+id/sb_progress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_end"
+                android:text="@string/timeline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:background="@android:color/black"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/rl_player_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_repeat"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_repeat_white_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_previous"
+                android:src="@drawable/ic_skip_previous_white_48dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/iv_play"/>
+
+            <ImageView
+                android:id="@+id/iv_play"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_play_arrow_white_48dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_next"
+                android:src="@drawable/ic_skip_next_white_48dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/iv_play"/>
+
+            <ImageView
+                android:id="@+id/iv_fav"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_favorite_border_white_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_player_options"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@android:color/darker_gray"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/iv_up_arrow"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_keyboard_arrow_up_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="SWAG Se Swagat: Tiger Zinda Hai"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:id="@+id/tv_song"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:maxLines="1"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_play_pause"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_play_arrow_red_a700_48dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ProgressBar
+                android:id="@+id/pb_loading"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_progress"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8dp"
+            android:layout_marginBottom="-8dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+    </FrameLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:background="@android:color/background_dark"
+    android:layout_height="75dp">
+
+    <ImageView
+        android:id="@+id/iv_not_image"
+        android:src="@drawable/photo"
+        android:layout_gravity="center"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_not_name"
+        android:textColor="@android:color/white"
+        android:text="SONG NAME"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:maxLines="1"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/btnPrevious"
+        android:src="@drawable/ic_skip_previous_white_48dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/btnPlay"
+        android:src="@drawable/ic_pause_white_48dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/btnNext"
+        android:src="@drawable/ic_skip_next_white_48dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/btnClose"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_close_white_18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

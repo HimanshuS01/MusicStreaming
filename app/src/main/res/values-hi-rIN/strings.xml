@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">मैनहट्टन</string>
+    <string name="app_name_2">गोविंद की गली</string>
+    <string name="title_play">बजाओ</string>
+    <string name="title_thought">विचार</string>
+    <string name="title_upcoming">कार्यक्रम</string>
+    <string name="title_my_music">"मेरे संगीत "</string>
+    <string name="title_settings">सेटिंग्स</string>
+    <string name="action_settings">सेटिंग्स</string>
+    <string name="action_search">खोज</string>
+    <string name="invite">आमंत्रण</string>
+    <string name="directions">दिशा</string>
+    <string name="share">शेयर</string>
+    <string name="add_to_playlist">प्लेलिस्ट में जोड़ें</string>
+    <string name="download">डाउनलोड</string>
+    <string name="title_activity_settings">सेटिंग्स</string>
+    <string name="play_lists">प्लेलिस्ट</string>
+    <string name="add_to_calender">कैलेंडर में जोड़ें</string>
+    <string name="invite_intent_text">विनोद अग्रवाल की लाइव इवेंट में भाग लें और उनके द्वारा बनाई गई परम दैवीय आभा का आनंद लें।</string>
+    <string name="no_directions">दिशाओं के लिए खोज नहीं कर सकते</string>
+    <string name="cancel">रद्द</string>
+    <string name="settings_about_app">ऐप के बारे में</string>
+    <string name="settings_share_app">ऐप शेयर करें</string>
+    <string name="settings_rate_app">ऐप रेट करें</string>
+    <string name="settings_night_mode">रात्री मोड</string>
+    <string name="settings_feedback">प्रतिक्रिया</string>
+    <string name="settings_change_language">भाषा बदलें</string>
+    <string name="recently_played">हाल ही में बजाए ह्यू गीत</string>
+    <string name="favourites">आपके पसंदीदा संगीत</string>
+
+</resources>

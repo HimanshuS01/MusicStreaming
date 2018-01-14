@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="always|withText"
+        android:id="@+id/navigation_play"
+        android:icon="@drawable/ic_play_black_24dp"
+        android:title="@string/title_play" />
+
+    <item
+        app:showAsAction="always|withText"
+        android:id="@+id/navigation_thought"
+        android:icon="@drawable/ic_thought_black_24dp"
+        android:title="@string/title_thought" />
+
+    <item
+        app:showAsAction="always|withText"
+        android:id="@+id/navigation_upcoming"
+        android:icon="@drawable/ic_upcoming_black_24dp"
+        android:title="@string/title_upcoming" />
+
+    <item
+        app:showAsAction="always|withText"
+        android:id="@+id/navigation_my_music"
+        android:icon="@drawable/ic_my_music_black_24dp"
+        android:title="@string/title_my_music" />
+
+    <item
+        app:showAsAction="always|withText"
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/title_settings" />
+
+</menu>
